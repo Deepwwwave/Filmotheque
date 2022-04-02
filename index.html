@@ -5,7 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Laila:wght@600&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Laila:wght@600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/styles.css" />
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
@@ -13,9 +20,22 @@
     ></script>
   </head>
   <body>
-    <header><h1>Les Films de la semaine</h1></header>
+    <header>
+      <h1><i class="fa fa-film"></i> Filmothèque</h1>
+    </header>
+    <section class="section_recherche">
+      <label for="site-search">Rechercher un film</label>
+      <input type="search" id="film" name="film" placeholder="Titre du film"/>
+      <button id="bouton_search">Search</button>
+      <div id="propositions_recherche">
+      </div>
+      <aside id="detail_film">
 
-    <main id="main"></main>
+      </aside>
+    </section>
+
+    <hr />
+    <main id="main"><h2>Les Films de la semaine</h2></main>
 
     <script src="js/main.js"></script>
   </body>
