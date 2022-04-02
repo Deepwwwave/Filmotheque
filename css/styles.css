@@ -1,0 +1,68 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "EB Garamond", serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+h1 {
+  text-align: center;
+}
+body {
+  font-size: 1.6rem;
+  background-image: url(../img/cool-background.png);
+  color: white;
+}
+
+#liste_films {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container_film {
+  padding-left: 0px;
+  width: 500px;
+  margin: 70px auto 50px auto;
+  height: 1000px;
+  margin-bottom: 50px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  overflow: hidden;
+  border-radius: 20px;
+  background-color: black;
+}
+
+.container_film:hover {
+  overflow: visible;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+p {
+  text-align: justify;
+  line-height: 1.4em;
+  letter-spacing: 1;
+  padding: 10px;
+  cursor: pointer;
+  background-color: black;
+}
+
+p:hover {
+  position: absolute;
+  width: 500px;
+}
+
+ul {
+  padding: 0px;
+  list-style-type: none;
+}
+
+li {
+  padding-left: 10px;
+}
