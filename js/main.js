@@ -91,7 +91,7 @@ function displayResearchMovie(items) {
             `;
   }
   html += "</ul>";
-  $("#propositions_recherche").html(html);
+  $("#propositions_recherche").html(html).show("slow");
   console.log(items.results);
 
   $(".titre_film").on("click", eventClickSelectedMovie)
@@ -110,17 +110,17 @@ function displaySelectedMovie(items) {
   html += `
   <div class="titre_image_selected_film">
   <li>${titre}</li>
-  <li><img class="img_movie_selected" src=${urlImgSelectedMovie}${items.poster_path}></li><br/>
+  <li><img class="img_movie_selected" alt=${titre} src=${urlImgSelectedMovie}${items.poster_path}></li><br/>
   </div>
   <div class="descritpti_film_choisit"><li>Date : ${dateDeSortie}</li><br/>
   <p>${items.overview}<p><br/>
   <li>Note : ${items.vote_average}</li><br/>
   <li>Nombre de votes : ${items.vote_count}</li><br/>
-  <li>compagnies : ${items.production_companies.name}</li><br/>
+  <li>Production : ${items.production_companies[0].name}</li><br/>
   </ul>
   </div>
   `;
-  $("#detail_film").html(html);
+  $("#detail_film").html(html).fadeIn("slow");
   console.log(items);
 }
 
@@ -142,6 +142,7 @@ function eventClickSelectedMovie(e) {
   console.log(idMovieSelectedByUser)
   API_URL_MOVIE_SELECTED = `https://api.themoviedb.org/3/movie/${idMovieSelectedByUser}?api_key=${API_KEY}&language=fr`;
   ajaxRequest(API_URL_MOVIE_SELECTED, displaySelectedMovie);
+  $("#detail_film").fadeIn("slow");
 }
 
 

@@ -41,15 +41,19 @@ body {
 
 .container_film {
   padding-left: 0px;
-  width: 500px;
+  width: 400px;
   margin: 70px auto 50px auto;
-  height: 1000px;
+  height: 800px;
   margin-bottom: 50px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   overflow: hidden;
   border-radius: 20px;
   background-color: black;
   text-align: center;
+}
+
+.img_film_semaine{
+  width:400px;
 }
 
 .container_film:hover {
@@ -89,6 +93,9 @@ li {
   padding-right:200px;
   padding-left:200px;
 }
+
+
+
 
 .img_movie_selected {
   width: 250px;
@@ -132,5 +139,6 @@ aside {
   width: 300px;
   margin: 10px 10px 10px 10px;
 }
+
 
 
