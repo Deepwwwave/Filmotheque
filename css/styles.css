@@ -4,6 +4,11 @@
   font-family: "EB Garamond", serif;
 }
 
+a{
+  text-decoration: none;
+  color: black
+}
+
 html {
   font-size: 62.5%;
 }
@@ -27,24 +32,35 @@ hr {
 
 h2 {
   text-align: center;
+  margin-bottom: 70px;
 }
 body {
   font-size: 1.6rem;
-  background-image: url(../img/cool-background.png);
+  background: rgb(32, 30, 25);
+  background: linear-gradient(
+    90deg,
+    rgba(32, 30, 25, 1) 1%,
+    rgba(36, 32, 32, 1) 100%
+  );
   color: white;
+}
+
+main{
+  margin-bottom: 100px;
 }
 
 #liste_films {
   display: flex;
   flex-wrap: wrap;
+  padding-right: 100px;
+  padding-left: 100px;
 }
 
 .container_film {
   padding-left: 0px;
-  width: 400px;
-  margin: 70px auto 50px auto;
-  height: 800px;
-  margin-bottom: 50px;
+  width: 350px;
+  margin: 40px auto auto auto;
+  height: 745px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   overflow: hidden;
   border-radius: 20px;
@@ -52,13 +68,25 @@ body {
   text-align: center;
 }
 
-.img_film_semaine{
-  width:400px;
+.img_film_semaine {
+  width: 350px;
 }
 
-.container_film:hover {
-  overflow: visible;
+
+#resume_film_semaine{
+  width: 350px
 }
+
+.voir_resume{
+  color:aquamarine;
+  text-align:center;
+}
+
+#resume_film_semaine:hover{
+  width: 350px;
+  position:absolute
+}
+
 
 h3 {
   text-align: center;
@@ -67,12 +95,18 @@ h3 {
 }
 
 p {
+  display: block;
   text-align: justify;
   line-height: 1.4em;
   letter-spacing: 1;
   padding: 10px;
   cursor: pointer;
-  border-radius: 0px 0px 20px 30px;
+  border-radius: 0px 0px 20px 20px;
+
+}
+
+#resume_film_semaine {
+  background-color: black;
 }
 
 ul {
@@ -84,18 +118,19 @@ li {
   padding-left: 10px;
 }
 
+.titre_film:hover {
+  color: rosybrown;
+}
+
+
 .container_film_recherche_select {
-  display: flex;
   justify-content: space-around;
   align-items: flex-start;
   margin: auto;
   margin-top: 50px;
-  padding-right:200px;
-  padding-left:200px;
+  padding-right: 200px;
+  padding-left: 200px;
 }
-
-
-
 
 .img_movie_selected {
   width: 250px;
@@ -103,27 +138,24 @@ li {
 
 #liste_film_recherche {
   background-color: black;
-  text-align: center;
-  padding: 50px;
+  text-align: left;
+  padding: 40px 40px 40px 10px;
   border-radius: 20px;
   line-height: 3rem;
   cursor: pointer;
 }
 
-aside {
-  background-color: black;
-  width:700;
-  padding-top:20px;
-}
 #detail_film {
-  
+  background-color: black;
+  width: 700px;
+  height: 800px;
+  padding-top: 20px;
   border-radius: 20px;
   text-align: justify;
 }
 
-.proposition_de_recherche {
-  height: 300px;
-  margin-top: 100px;
+#propositions_recherche {
+  width: 300px;
 }
 
 .liste_film_choisit {
@@ -135,10 +167,15 @@ aside {
   margin: 10px 0px 10px 10px;
 }
 
-.descritpti_film_choisit {
+.descritption_film_choisit {
   width: 300px;
   margin: 10px 10px 10px 10px;
 }
 
+.display_none {
+  display: none;
+}
 
-
+.display {
+  display: flex;
+}

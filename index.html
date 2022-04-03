@@ -26,11 +26,14 @@
     <section class="section_recherche">
       <label for="site-search">Rechercher un film</label>
       <input type="search" id="film" name="film" placeholder="Titre du film" />
-      <button id="bouton_search">Search</button>
+      <button id="bouton_search">
+        <a href="#propositions_recherche">Search</a>
+      </button>
     </section>
-    <div class="container_film_recherche_select">
+    <div class="container_film_recherche_select display_none">
       <div id="propositions_recherche"></div>
-      <aside id="detail_film"></aside>
+      <aside id="detail_film">
+      </aside>
     </div>
 
     <hr />
