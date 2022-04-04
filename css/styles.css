@@ -96,13 +96,12 @@ h3 {
 
 p {
   display: block;
-  text-align: justify;
+  text-align:justify;
   line-height: 1.4em;
   letter-spacing: 1;
   padding: 10px;
   cursor: pointer;
   border-radius: 0px 0px 20px 20px;
-
 }
 
 #resume_film_semaine {
@@ -114,9 +113,7 @@ ul {
   list-style-type: none;
 }
 
-li {
-  padding-left: 10px;
-}
+
 
 .titre_film:hover {
   color: rosybrown;
@@ -149,10 +146,12 @@ li {
   background-color: black;
   width: 700px;
   height: 800px;
-  padding-top: 20px;
+  padding: 20px;
   border-radius: 20px;
   text-align: justify;
 }
+
+
 
 #propositions_recherche {
   width: 300px;
@@ -167,7 +166,7 @@ li {
   margin: 10px 0px 10px 10px;
 }
 
-.descritption_film_choisit {
+.description_film_choisit {
   width: 300px;
   margin: 10px 10px 10px 10px;
 }
@@ -178,4 +177,93 @@ li {
 
 .display {
   display: flex;
+}
+
+@media (min-width:500px) and (max-width: 1320px) {
+  .container_film_recherche_select {
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction:column;
+    margin: auto;
+    margin-top: 50px;
+    
+  }
+
+  #liste_films {
+    padding:10px;
+  }
+
+  #liste_film_recherche {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+   }
+
+   .titre_image_selected_film {
+    align-self: flex-start;
+  }
+
+  #detail_film {
+    width:400px;
+    flex-direction: column;
+    height: min-content
+  }
+
+  .liste_film_choisit {
+    flex-direction: column
+  }
+
+  .titre_image_selected_film {
+    align-items: right;
+  }
+}
+
+
+@media (max-width:500px) {
+
+  .container_film_recherche_select {
+    align-items: center;
+    flex-direction:column;
+    
+    margin-top: 50px;
+    
+  }
+
+  .container_film {
+    width: 400px;
+    height: 745px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  }
+
+  #liste_films {
+    padding:10px;
+  }
+
+  #liste_film_recherche {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    
+   }
+
+  #detail_film {
+    width:300px;
+    flex-direction: column;
+    align-items: center;
+    height: min-content
+  }
+
+  .description_film_choisit{
+    width: 200px;
+  }
+
+  .liste_film_choisit {
+    flex-direction: column;
+  }
+
+  .titre_image_selected_film {
+    align-self: flex-start;
+  }
 }
