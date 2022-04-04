@@ -37,13 +37,6 @@ function displayWeekMovies(items) {
   console.log(items.results);
 }
 
-//Fonction qui display le résumé des films de la semaine au passage de la sourie
-function gestionDisplayOverviewWeekMovies() {
-  $(".container_film").on(
-    "mousover",
-    $("#resume_film_semaine").css("position", "absolute")
-  );
-}
 
 // Fonction qui affiche les résultats de la recherche à partir de l'API (search/movie)
 function displayResearchMovie(items) {
